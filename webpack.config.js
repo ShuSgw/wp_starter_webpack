@@ -32,6 +32,10 @@ module.exports = {
       // filename: '[name].[hash].css',
       filename: 'style.css',
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ],
 
   // optimizing
@@ -60,22 +64,19 @@ module.exports = {
         loader: 'babel-loader',
       },
 
-      // cssのみ
       {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          { loader: 'css-loader', options: { url: false } },
         ],
       },
-
-      // sass用のrule
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
+          { loader: 'css-loader', options: { url: false } },
+          'sass-loader'
         ],
       },
     ],
