@@ -12,6 +12,8 @@ const outputPath = path.resolve(__dirname);
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
+const webpack = require('webpack');
+
 // uglify
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
@@ -81,5 +83,6 @@ module.exports = {
       },
     ],
   },
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map'
+  devtool: 'eval',
 };

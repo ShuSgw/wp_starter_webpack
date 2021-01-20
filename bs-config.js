@@ -1,6 +1,6 @@
 module.exports = {
     "files": ["**.php", "**.scss", "**.js"],
-    "proxy": 'http://noriko02.lo/',
+    "proxy": 'http://test.lo/',
     "watchEvents": [
         "change"
     ],
