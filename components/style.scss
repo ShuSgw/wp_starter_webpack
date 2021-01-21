@@ -1,1 +1,32 @@
-@import "./all-pages/front-page/index";
+// @import "./all-pages/front-page/index";
+
+@import "../node_modules/scss-reset/_reset.scss";
+@import "./global/index";
+
+html,
+body,
+#wrap {
+    height: 100%;
+}
+
+#wrap {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_contents {
+    flex: 1;
+}
+
+header {
+    background-color: red;
+}
+footer {
+    background-color: green;
+}
+
+// default nav
+.menu {
+    background-color: silver;
+}

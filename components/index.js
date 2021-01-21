@@ -1,5 +1,10 @@
 import style from './style.scss';
-import { sample } from './all-pages/front-page/index';
 
+import './style.scss';
+import Footer from "./global/footer-contents/footer";
+import GlobalNav from "./global/global-nav/globalNav";
+import Header from "./global/header-contents/header";
 
-console.log(sample('hello world'));
+Footer();
+Header();
+GlobalNav();

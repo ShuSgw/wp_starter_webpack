@@ -1,6 +1,6 @@
 module.exports = {
     "files": ["**.php", "**.scss", "**.js"],
-    "proxy": 'http://test.lo/',
+    "proxy": 'http://precupid.lo/',
     "watchEvents": [
         "change"
     ],
