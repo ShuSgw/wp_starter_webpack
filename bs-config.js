@@ -1,7 +1,4 @@
 module.exports = {
-    "files": ["**.php", "**.scss", "**.js"],
-    "proxy": 'http://precupid.lo/',
-    "watchEvents": [
-        "change"
-    ],
+  files: ["**.php"],
+  proxy: "http://1baken-test.lo/",
 };

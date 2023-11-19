@@ -1,7 +1,7 @@
-<?php get_template_part("./components/global/footer-contents/footer-contents")?>
+<?php get_template_part("./src/components/global/footer-contents/footer-contents") ?>
 </div>
-<?php /* wrap end */?>
+<?php /* wrap end */ ?>
 </body>
-<?php wp_footer();?>
+<?php wp_footer(); ?>
 
 </html>

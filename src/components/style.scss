@@ -1,6 +1,6 @@
 // @import "./all-pages/front-page/index";
 
-@import "../node_modules/scss-reset/_reset.scss";
+@import "../../node_modules/scss-reset/_reset.scss";
 @import "./global/index";
 
 html,
@@ -20,7 +20,7 @@ body,
 }
 
 header {
-    background-color: red;
+    background-color: green;
 }
 footer {
     background-color: green;
